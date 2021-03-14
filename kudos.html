@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .button{
+      background : lightgreen;
+      padding : 5px;
+      margin : 4px 18px 0  19px;
+      width : 50px;
+      border-color: lightgreen;
+   border-radius: 4px;
+    }
+    .button:hover{
+      background-color: Green;
+    }
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 270px;
+      padding: 0 10px;
+        margin-left: 1px;
+        border-radius: 4px;
+        margin-right: -20px;
+    }
+    .pu{
+      margin-bottom: 40px;
+      margin-right: -20px;
+    }
+    .card-img{
+      width : 180px;
+      height : 5cm;
+      padding-top: .1cm;
+
+    }
+
+    .col-md-4{
+      background-color: silver;
+    }
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+    background: white;
+    margin-left: 7%;
+       box-shadow: 10px 10px 5px #c5c1c0;
+margin-bottom: 10%;
+       height : 10cm;
+    border-radius: 4px;
+    }
+    .sky{
+    color: grey;
+    }
+.blue{
+  color: #6453BA;
+}
+
+    </style>
+  </head>
+  <body style="background: silver">
+    <h1 style="color:black; margin-top : -6px; margin-bottom : 0.5px; font-family:  arial;">SpaceX Launch Programs</h1>
+    <div class="row">
+      <div class="column pu" style="background: white; width: 200px; height : 14cm; margin-left:20px; ">
+      <h3  style="margin-top: 1px; margin-bottom : -7px;"><b>Filters</b></h3><h7><br><center>Launch Year</center></h7>
+        <hr style="width :75%">
+
+
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2006"'>2006</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2007"'>2007</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2008"'>2008</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2009"'>2009</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2010"'>2010</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2011"'>2011</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2012"'>2012</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2013"'>2013</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2014"'>2014</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2015"'>2015</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2016"'>2016</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2017"'>2017</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2018"'>2018</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2019"'>2019</button>
+<button class="button" type="radio" onclick='document.getElementById("seven").innerHTML = "2020"'>2020</button>
+<br>
+        <h7><br><center>Successful Launch </center></h7>
+          <hr style="width :75%">
+          <button class="button" type="button" onclick='document.getElementById("eight").innerHTML = "True"'> True</button>
+          <button class="button" type="button" onclick='document.getElementById("eight").innerHTML = "False"'> False</button><br><br>
+          <h7><center>Successful Landing</center></h7>
+            <hr style="width :75%">
+            <button class="button" type="button" onclick='document.getElementById("nine").innerHTML = "True"'> True </button>
+            <button class="button" type="button" onclick='document.getElementById("nine").innerHTML = "False"'> False </button>
+      </div>
+  <div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="col-md-4">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.48K0J8OW7pHTSc2uKfybnQHaJT&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+
+    <h4 class="blue">FalconSat #1 </h4>
+    <b>Mission Ids:</b>
+    <p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+    <b>Launch Year:</b>
+      <p style="display:inline;"id="seven" class="sky" >2006</p><br>
+    <b>Successful Launch:</b>
+    <p style="display:inline;"id="eight" class="sky" >false</p><br>
+    <b>Successful Landing:</b>
+  <p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.PEKsvVR7NTn5NE_uWpI7MwHaHq&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+<h4 class="blue">DemoSat #2</h4>
+<b>Mission Ids:</b>
+<p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+<b>Launch Year:</b>
+  <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+<b>Successful Launch:</b>
+<p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+<b>Successful Landing:</b>
+<p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.fSMorqM4A8XRUZWcWpy2fQHaHX&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+<h4 class="blue">Trailblazer #3</h4>
+<b>Mission Ids:</b>
+<p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+<b>Launch Year:</b>
+  <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+<b>Successful Launch:</b>
+<p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+<b>Successful Landing:</b>
+<p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.frhgWe429fTk_FDErT0vtwHaHX&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+
+    <h4 class="blue">RatSat #4</h4>
+    <b>Mission Ids:</b>
+    <p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+    <b>Launch Year:</b>
+      <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+    <b>Successful Launch:</b>
+    <p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+    <b>Successful Landing:</b>
+    <p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.OOpxoqZqPiQimd52JrebjwHaHa&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+
+    <h4 class="blue">{mission_name}#{flight_number}</h4>
+
+    <b>Mission Ids:</b>
+    <p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+    <b>Launch Year:</b>
+      <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+    <b>Successful Launch:</b>
+    <p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+    <b>Successful Landing:</b>
+    <p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.BiahyDZhvPviidB7lc1DlgAAAA&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+
+    <h4 class="blue">{mission_name}#{flight_number}</h4>
+
+    <b>Mission Ids:</b>
+    <p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+    <b>Launch Year:</b>
+      <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+    <b>Successful Launch:</b>
+    <p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+    <b>Successful Landing:</b>
+    <p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse3.mm.bing.net/th?id=OIP.rz0zTEF8oMqhd_XJYFXnowHaHa&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+<h4 class="blue">{mission_name}#{flight_number}</h4>
+
+<b>Mission Ids:</b>
+<p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+<b>Launch Year:</b>
+  <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+<b>Successful Launch:</b>
+<p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+<b>Successful Landing:</b>
+<p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card mb-3" style="max-width: 540px;">
+<div class="col-md-4">
+  <img src="https://tse2.mm.bing.net/th?id=OIP.fm_tc2NqPX1q_DhKNmkhVAHaHa&pid=Api&P=0&w=300&h=300" class="card-img" alt="...">
+</div>
+<div class="col-md-8">
+  <div class="card-body">
+<h4 class="blue">{mission_name}#{flight_number}</h4>
+<b>Mission Ids:</b>
+<p style="display:inline;"id="ei" class="sky" >{list Mission Ids}</p><br>
+<b>Launch Year:</b>
+  <p style="display:inline;"id="seven" class="sky" >{launch_year}</p><br>
+<b>Successful Launch:</b>
+<p style="display:inline;"id="eight" class="sky" >{launch_success}</p><br>
+<b>Successful Landing:</b>
+<p style="display:inline;"id="nine" class="sky" >{launch_landing}</p><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br><h3 style="font-family : arial "><center><b>Developed by: Kaviya N </b></center></h3>
+      </body>
+      </html>
